@@ -1,0 +1,80 @@
+{
+  "projectType": "saas",
+  "projectName": "Anchor Cheats",
+  "projectDescription": "Anchor Cheats provides game cheat software (internal/external cheats, HWID spoofers, and NFA account loaders) with step-by-step setup guides for each product.",
+  "theme": "almond",
+  "primaryColor": "#7fd0ff",
+  "lightColor": "#2463ec",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Setup Guides",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "select-your-game"
+            ]
+          },
+          {
+            "group": "Rust",
+            "pages": [
+              "rust/disconnect-rust-internal",
+              "rust/disconnect-rust-external"
+            ]
+          },
+          {
+            "group": "Wardogs",
+            "pages": [
+              "wardogs/disconnect-wardogs-external"
+            ]
+          },
+          {
+            "group": "Game Accounts",
+            "pages": [
+              "game-accounts/nfa-loader"
+            ]
+          },
+          {
+            "group": "HWID Spoofers",
+            "pages": [
+              "spoofers/arkan-hwid-spoofer"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Help",
+        "groups": [
+          {
+            "group": "Safety & Support",
+            "pages": [
+              "stay-undetected",
+              "support"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Disconnect Rust Internal cheat with aimbot and ESP",
+    "Disconnect Rust External cheat via SteelSeries overlay",
+    "Disconnect Wardogs External cheat via Discord Legacy Overlay",
+    "NFA account loader for game account management",
+    "Arkan HWID Spoofer supporting EAC, BattlEye, Ricochet, ACE, and MRAC",
+    "Step-by-step loader and injection guides for each product",
+    "Stay-undetected tips and best practices",
+    "Discord-based support ticketing"
+  ],
+  "publicApiSurface": [
+    "Loader download at cheezit.life",
+    "NFA Loader download at loader.monster",
+    "Arkan HWID Spoofer loader at arkancore.com",
+    "License key activation via loader UI",
+    "Customer panel at anchorcheats.com/customer-panel/dashboard",
+    "Status page at anchorcheats.com/status",
+    "Support tickets via Discord discord.gg/anchorcheats"
+  ]
+}

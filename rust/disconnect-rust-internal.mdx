@@ -1,0 +1,119 @@
+---
+title: "Set Up Disconnect Rust Internal — Full Setup Guide"
+sidebarTitle: "Rust Internal"
+description: "Prepare Windows, disable Defender with DControl, download the loader, inject Disconnect Rust Internal, and resolve the most common setup errors."
+---
+
+This guide walks you through every step required to get Disconnect Rust Internal running — from disabling Windows Defender and installing dependencies to launching the loader, injecting the cheat, and fixing errors if something goes wrong. Work through each section in order and you'll be in-game with the menu open in minutes.
+
+<Warning>
+  Follow every step carefully. Skipping a step is the most common cause of setup failures.
+</Warning>
+
+---
+
+## Step 1 — Disable Windows Defender
+
+Antivirus software often flags game cheats as suspicious because they inject code into the game to enable features like aimbot or ESP. This is normal for all cheat software — it is not a sign that EnmaCheats is unsafe. You must fully disable Windows Defender before the loader will work correctly.
+
+Start by turning off real-time protection manually. If you skip this, Windows will block or delete DControl before you can run it.
+
+<Steps>
+  <Step title="Turn off real-time protection">
+    Open **Windows Security** → **Virus & threat protection** → **Manage settings**. Turn off **Real-time protection** and disable all other toggles on that page.
+  </Step>
+  <Step title="Install WinRAR">
+    Download and install WinRAR from [winrar.com/download.html](https://www.win-rar.com/download.html). You need it to extract the DControl archive in the next steps.
+  </Step>
+  <Step title="Download DControl">
+    Download Defender Control from [sordum.org](https://www.sordum.org/files/downloads.php?st-defender-control).
+  </Step>
+  <Step title="Extract the archive">
+    Right-click the downloaded `.rar` file and choose **Extract Here** (or **Extract to folder**). When prompted for a password, enter: `sordum`
+  </Step>
+  <Step title="Disable Windows Defender">
+    Open `dControl.exe` and click **Disable Windows Defender**. The window turns red when Defender is fully off.
+  </Step>
+</Steps>
+
+After completing the steps above, apply these two additional security settings:
+
+<Steps>
+  <Step title="Turn off Exploit protection">
+    Go to **Windows Security** → **App & browser control** → **Exploit protection settings**. Set every option to **Off by default**.
+  </Step>
+  <Step title="Turn off Reputation-based protection">
+    Still in **App & browser control**, open **Reputation-based protection settings** and turn off all options.
+  </Step>
+</Steps>
+
+---
+
+## Required Files
+
+Install both files before continuing — they are mandatory dependencies for the loader and cheat to run.
+
+- **DirectX End-User Runtimes** — [Download from Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=35)
+- **Visual C++ Redistributable (x64)** — [Download from Microsoft](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+
+Restart your computer after installing if Windows asks you to.
+
+---
+
+## Step 2 — Download the Loader
+
+Download the loader from [cheezit.life](https://cheezit.life/). Always run it as administrator — right-click the `.exe` and select **Run as administrator**.
+
+Your license key is available in your **client area** or your **order confirmation email**. You'll enter it in the loader the first time you launch it.
+
+---
+
+## Step 3 — Inject & Launch
+
+<Steps>
+  <Step title="Run the loader as administrator and log in">
+    Right-click the loader and select **Run as administrator**. Log in with your existing account or register a new one, then activate your license key when prompted.
+  </Step>
+  <Step title="Select the cheat and inject">
+    Select **Disconnect Rust Internal** from the product list and press **Inject**. When the loader prompts you that Rust is about to open, allow it. If you are using an HWID spoofer, load the spoofer now, then press **OK** to continue.
+  </Step>
+  <Step title="Open the in-game menu">
+    Once injection completes, the cheat menu will appear in-game. The default keybind to open and close the menu is **Insert** (`INS`).
+  </Step>
+</Steps>
+
+<Tip>
+  To stay as safe as possible, rely mostly on ESP and only use the more obvious features here and there. Keeping your settings subtle dramatically reduces the chance of reports and bans.
+</Tip>
+
+---
+
+## Common Errors
+
+<Accordion title="Loader won't connect">
+  Disable any active VPN or proxy before launching the loader — they can prevent it from reaching the authentication server. Allow the loader through your firewall and confirm you're running it as administrator. If the issue persists, re-download the loader from [cheezit.life](https://cheezit.life/) and try again.
+</Accordion>
+
+<Accordion title="Injection fails">
+  The most common cause is an antivirus still running in the background. Fully disable Windows Defender using DControl (see Step 1), close any third-party antivirus, restart your PC, and then launch the loader as administrator again.
+</Accordion>
+
+<Accordion title="EAC: banned tool detected">
+  This error means an anti-cheat or antivirus process is still active on your system. Go back through every step in **Step 1 — Disable Windows Defender**, uninstall any third-party antivirus software, restart your computer, and try injecting again.
+</Accordion>
+
+<Accordion title="Error 0x13 / other 0x error codes">
+  Make sure both **DirectX** and the **Visual C++ Redistributable** are installed (see Required Files above). Run the loader as administrator. If the error code persists after installing the runtimes and re-running as admin, re-download the loader from [cheezit.life](https://cheezit.life/).
+</Accordion>
+
+<Accordion title="Menu not showing / features not working">
+  Confirm that injection completed successfully before you joined a server. Press **Insert** to toggle the menu. If nothing appears, close the game, perform a full PC restart, and re-inject before launching Rust again.
+</Accordion>
+
+---
+
+## Need Help?
+
+If you've worked through every step and are still stuck, open a support ticket on the EnmaCheats Discord. Include your product name, the step where it failed, the exact error message or a screenshot (hide your license key), and your Windows version.
+
+[Open a ticket on Discord →](https://discord.gg/enmacheats)

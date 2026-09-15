@@ -1,0 +1,136 @@
+---
+title: "Set Up Disconnect Rust External — Full Setup Guide"
+sidebarTitle: "Rust External"
+description: "Disable Windows Defender, install the SteelSeries GG overlay, download the loader, inject Disconnect Rust External, and fix ESP lag and overlay errors."
+---
+
+This guide covers everything you need to get Disconnect Rust External up and running — disabling Windows Defender, installing the SteelSeries GG overlay that the external build requires, downloading the loader, and injecting the cheat. Work through each section in order and do not skip steps, especially the overlay setup, which is unique to the external build.
+
+<Warning>
+  Follow every step carefully. Skipping a step is the most common cause of setup failures.
+</Warning>
+
+---
+
+## Step 1 — Disable Windows Defender
+
+Antivirus software flags cheat loaders because they inject code into games to power features like ESP. This is expected behaviour for all cheat software — it does not mean the loader is malicious. You must fully disable Windows Defender before the loader will run correctly.
+
+Turn off real-time protection manually first. Skipping this causes Windows to block or delete DControl before you can use it.
+
+<Steps>
+  <Step title="Turn off real-time protection">
+    Open **Windows Security** → **Virus & threat protection** → **Manage settings**. Turn off **Real-time protection** and disable all other toggles on that page.
+  </Step>
+  <Step title="Install WinRAR">
+    Download and install WinRAR from [winrar.com/download.html](https://www.win-rar.com/download.html). You need it to extract the DControl archive.
+  </Step>
+  <Step title="Download DControl">
+    Download Defender Control from [sordum.org](https://www.sordum.org/files/downloads.php?st-defender-control).
+  </Step>
+  <Step title="Extract the archive">
+    Right-click the downloaded `.rar` file and choose **Extract Here**. When prompted for a password, enter: `sordum`
+  </Step>
+  <Step title="Disable Windows Defender">
+    Open `dControl.exe` and click **Disable Windows Defender**. The window turns red when Defender is fully off.
+  </Step>
+</Steps>
+
+After completing the steps above, apply these two additional security settings:
+
+<Steps>
+  <Step title="Turn off Exploit protection">
+    Go to **Windows Security** → **App & browser control** → **Exploit protection settings**. Set every option to **Off by default**.
+  </Step>
+  <Step title="Turn off Reputation-based protection">
+    Still in **App & browser control**, open **Reputation-based protection settings** and turn off all options.
+  </Step>
+</Steps>
+
+---
+
+## Required Files
+
+Install both files before continuing — they are mandatory dependencies for the loader and cheat to run.
+
+- **DirectX End-User Runtimes** — [Download from Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=35)
+- **Visual C++ Redistributable (x64)** — [Download from Microsoft](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+
+Restart your computer after installing if Windows asks you to.
+
+---
+
+## Step 2 — Set Up the Overlay
+
+<Info>
+  The external build renders its ESP and visuals through the SteelSeries GG overlay — not through the game itself. SteelSeries GG must be installed and running in the background before you inject, or the cheat will have nothing to draw on.
+</Info>
+
+Download SteelSeries GG from [steelseries.com/gg/moments/download](https://steelseries.com/gg/moments/download) and install it. Once installed, launch SteelSeries GG and leave it running in the background. You do not need to configure anything inside it — just make sure it is open before you proceed to the loader.
+
+---
+
+## Step 3 — Download the Loader
+
+Download the loader from [cheezit.life](https://cheezit.life/). Always run it as administrator — right-click the `.exe` and select **Run as administrator**.
+
+Your license key is available in your **client area** or your **order confirmation email**. Enter it in the loader the first time you launch it.
+
+---
+
+## Step 4 — Inject & Launch
+
+<Steps>
+  <Step title="Run the loader as administrator and log in">
+    Right-click the loader and select **Run as administrator**. Log in with your existing account or create a new one, then enter your license key when prompted.
+  </Step>
+  <Step title="Inject the cheat">
+    Press **Inject** in the loader. If the loader displays the message **"Please launch SteelSeriesGG"**, minimise the loader, open SteelSeries GG, and then return to the loader and press Inject again.
+  </Step>
+  <Step title="Launch Rust">
+    When the loader tells you to open the game, launch Rust and start playing. The overlay and cheat features will initialise as the game loads.
+  </Step>
+  <Step title="Open the in-game menu">
+    The default keybind to open and close the cheat menu is **Insert** (`INS`).
+  </Step>
+</Steps>
+
+<Tip>
+  Keep SteelSeries GG open the entire time you are playing. Closing it mid-session will cause the overlay to disappear.
+</Tip>
+
+---
+
+## Common Errors
+
+<Accordion title="Loader won't connect">
+  Disable any active VPN or proxy before launching the loader. Allow the loader through your firewall and confirm you are running it as administrator. If the issue continues, re-download the loader from [cheezit.life](https://cheezit.life/) and try again.
+</Accordion>
+
+<Accordion title="Injection fails">
+  The most common cause is an antivirus still active in the background. Fully disable Windows Defender using DControl (see Step 1), close any third-party antivirus, restart your PC, and launch the loader as administrator again.
+</Accordion>
+
+<Accordion title="EAC: banned tool detected">
+  An anti-cheat or antivirus process is still running. Go back through every step in **Step 1 — Disable Windows Defender**, uninstall any third-party antivirus software, restart your PC, and try injecting again.
+</Accordion>
+
+<Accordion title="0x error codes">
+  Confirm that **DirectX** and the **Visual C++ Redistributable** are both installed (see Required Files above). Run the loader as administrator. If the error persists, re-download the loader from [cheezit.life](https://cheezit.life/).
+</Accordion>
+
+<Accordion title="Laggy or stuttering ESP">
+  Cap your in-game FPS using Rust's graphics settings to reduce rendering pressure on the overlay. Close any heavy background applications (browsers, streaming software, etc.) and confirm that SteelSeries GG is running. Performance of the external overlay is directly tied to how much headroom your system has.
+</Accordion>
+
+<Accordion title="SteelSeries GG crashing">
+  Reinstall SteelSeries GG from [steelseries.com/gg/moments/download](https://steelseries.com/gg/moments/download). Run it as administrator and make sure you launch it before opening the loader. If it keeps crashing, try restarting Windows and launching SteelSeries GG as the first thing you open.
+</Accordion>
+
+---
+
+## Need Help?
+
+If you've worked through every step and are still stuck, open a support ticket on the EnmaCheats Discord. Include your product name, the step where it failed, the exact error message or a screenshot (hide your license key), and your Windows version.
+
+[Open a ticket on Discord →](https://discord.gg/enmacheats)

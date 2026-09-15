@@ -1,0 +1,89 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "EnmaCheats",
+  "theme": "aspen",
+  "logo": {
+    "light": "https://media.brand.dev/c5dc7d98-59f2-40f6-ab9c-3c6efd100dc2.png",
+    "dark": "https://media.brand.dev/c5dc7d98-59f2-40f6-ab9c-3c6efd100dc2.png"
+  },
+  "favicon": "/images/logo.png",
+  "colors": {
+    "primary": "#22c55e",
+    "light": "#4ade80",
+    "dark": "#16a34a"
+  },
+  "navbar": {
+    "links": [
+      { "label": "Discord", "href": "https://discord.gg/enmacheats" },
+      { "label": "Status", "href": "https://enmacheats.com/status" }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Store",
+      "href": "https://enmacheats.com/products"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Setup Guides",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "select-your-game"
+            ]
+          },
+          {
+            "group": "Rust",
+            "pages": [
+              "rust/disconnect-rust-internal",
+              "rust/disconnect-rust-external"
+            ]
+          },
+          {
+            "group": "Wardogs",
+            "pages": [
+              "wardogs/disconnect-wardogs-external"
+            ]
+          },
+          {
+            "group": "Game Accounts",
+            "pages": [
+              "game-accounts/nfa-loader"
+            ]
+          },
+          {
+            "group": "HWID Spoofers",
+            "pages": [
+              "spoofers/arkan-hwid-spoofer"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Help",
+        "groups": [
+          {
+            "group": "Safety & Support",
+            "pages": [
+              "stay-undetected",
+              "support"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "socials": {
+      "discord": "https://discord.gg/enmacheats"
+    }
+  },
+  "background": {
+    "color": {
+      "light": "#f0fdf4",
+      "dark": "#0a1410"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+---
+title: "Arkan HWID Spoofer — Setup and Troubleshooting Guide"
+sidebarTitle: "Arkan Spoofer"
+description: "Check compatibility, install runtimes, download the Arkan loader, run the spoofer in the correct order, and fix the most common setup errors."
+---
+
+An HWID spoofer masks your hardware identifiers — such as your motherboard serial, drive ID, and network adapter MAC address — to reduce the risk of a hardware ban being enforced by anti-cheat systems. Arkan is the HWID spoofer available through EnmaCheats, and this guide walks you through checking whether your setup is supported, installing dependencies, running the spoofer correctly alongside a cheat, and resolving errors if something goes wrong.
+
+## Compatibility
+
+**Supported Windows versions:**
+- Windows 10: 20H2, 21H1, 21H2, 22H2
+- Windows 11: 22H2, 23H2, 24H2, 25H2
+
+**Supported anti-cheats:**
+- EAC (Easy Anti-Cheat)
+- BattlEye
+- Ricochet
+- ACE
+- MRAC
+
+<Warning>
+  Valorant and FACEIT are **not supported** by Arkan. Do not attempt to use the spoofer with these platforms. Compatibility with Call of Duty and individual EAC-protected games varies by title — confirm with support before purchasing or running the spoofer if you are unsure about your specific game.
+</Warning>
+
+<Note>
+  A spoofer reduces your hardware ban exposure, but it does not guarantee you will avoid a ban, and it cannot restore an account that has already been banned. Use it as one layer of protection, not as a guarantee.
+</Note>
+
+## Required Files
+
+Install both files below before downloading or running the loader:
+
+- **Visual C++ Redistributable (x64):** [https://aka.ms/vs/17/release/vc_redist.x64.exe](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+- **DirectX End-User Runtime:** [https://www.microsoft.com/en-us/download/details.aspx?id=35](https://www.microsoft.com/en-us/download/details.aspx?id=35)
+
+<Info>
+  If Windows flags or blocks the download, do not disable your security protections globally to get around it. Instead, send the warning message to support and ask them to verify the file for you.
+</Info>
+
+## Step 1 — Download the Loader
+
+Visit the Arkancore downloads page at [https://arkancore.com/download](https://arkancore.com/download), select **Continue**, and download your generated loader file.
+
+Keep your order confirmation email handy — your purchase details and license information are there. You can also view them any time by logging in to the EnmaCheats customer panel at [https://enmacheats.com/customer-panel/dashboard](https://enmacheats.com/customer-panel/dashboard).
+
+<Warning>
+  Never share your license key publicly — in Discord, forums, screenshots, or anywhere else. If your key is compromised, it may be revoked.
+</Warning>
+
+## Step 2 — Run the Spoofer
+
+<Info>
+  If you are using the spoofer alongside a cheat, the load order matters. Always follow this sequence: **cheat injection first → spoofer second → game last**. Running them out of order can cause the spoofer or cheat to fail.
+</Info>
+
+<Steps>
+  <Step title="Run the loader as administrator">
+    Right-click the downloaded loader file and select **Run as administrator**. Confirm any Windows permission prompt that appears. Do not run the loader as a standard user — it requires elevated privileges to spoof hardware identifiers.
+  </Step>
+  <Step title="Follow the prompts and wait for completion">
+    Work through the loader's on-screen prompts until the spoofing process finishes. Wait for the loader to confirm completion before opening your game — launching the game during the process can cause it to fail or produce incorrect results.
+  </Step>
+</Steps>
+
+## Cleaner
+
+Arkan includes a cleaner tool for supported games. The cleaner removes traces that anti-cheat software may use to link your new hardware IDs to a previous ban.
+
+<Note>
+  Check with support before using the cleaner — even if the spoofer is compatible with your game, the cleaner may not be. Cleaner availability is listed separately from spoofer compatibility, so always confirm before running it.
+</Note>
+
+## Common Errors
+
+<Accordion title="Loader does not start">
+  Confirm that both required runtime files — Visual C++ Redistributable and DirectX — are installed. Make sure you are running the loader as administrator, not as a standard user. If Windows shows a security warning or flags the file, do not bypass it yourself — forward the warning to support so they can verify the file is safe before you proceed.
+</Accordion>
+
+<Accordion title="Spoofing process fails mid-run">
+  Restart your computer fully, then try running the loader again as administrator. If you have multiple spoofers installed or running, close them all — running more than one spoofer at the same time will cause conflicts. If the process fails a second time, send support the exact error message shown by the loader so they can diagnose the issue.
+</Accordion>
+
+<Accordion title="Game is not working correctly after spoof">
+  Verify that your game and its anti-cheat are listed under the supported anti-cheats above. If the game falls into a category where compatibility is uncertain — such as Call of Duty or specific EAC titles — do not continue testing on accounts you care about. Contact support with your game name, Windows version, and a description of what is not working before testing further.
+</Accordion>
+
+## Need Help?
+
+Open a support ticket in the EnmaCheats Discord: [https://discord.gg/enmacheats](https://discord.gg/enmacheats)
+
+Include the following in your ticket so support can help you efficiently:
+
+- **Order ID**
+- **Game name**
+- **Windows version** (e.g. Windows 11 23H2)
+- **Exact error message** from the loader
+
+Redact your license key and any other private information from screenshots before sending them.

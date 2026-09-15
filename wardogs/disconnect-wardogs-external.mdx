@@ -1,0 +1,135 @@
+---
+title: "Set Up Disconnect Wardogs External Cheat (Full Guide)"
+sidebarTitle: "Wardogs External"
+description: "Complete setup guide for Disconnect Wardogs External — install required files, configure Discord Legacy Overlay, inject the cheat, and fix common errors."
+---
+
+Disconnect Wardogs External is the external cheat build for WARDOGS, rendering its overlay through Discord Legacy Overlay. This guide walks you through every step — from installing dependencies and preparing Windows to injecting the cheat and launching the game — so you can get into a match with everything working correctly.
+
+<Warning>
+  Follow every step carefully. Skipping a step is the most common cause of setup failures.
+</Warning>
+
+## Step 1 — Install Required Files
+
+Install both of the following before continuing. These are mandatory dependencies — the loader will not work without them.
+
+- **Visual C++ Redistributable (x64):** [https://aka.ms/vc14/vc_redist.x64.exe](https://aka.ms/vc14/vc_redist.x64.exe)
+- **DirectX End-User Runtime:** [https://www.microsoft.com/en-us/download/details.aspx?id=35](https://www.microsoft.com/en-us/download/details.aspx?id=35)
+
+<Note>
+  If the DirectX installer offers an optional Bing Bar during setup, clear that checkbox before continuing. Restart your computer if the installer asks you to.
+</Note>
+
+## Step 2 — Prepare Windows
+
+<Steps>
+  <Step title="Remove conflicting software">
+    Uninstall any third-party antivirus programs — including Avast, Malwarebytes, Norton, and Kaspersky — as well as Riot Vanguard and FACEIT if they are installed on your system. After uninstalling, restart your computer before moving on.
+  </Step>
+  <Step title="Prepare Windows Security">
+    Open **Windows Security** and turn off the following:
+    - **Real-time protection** — Virus & threat protection → Manage settings
+    - **Tamper protection** — same page as Real-time protection
+    - **Memory integrity** — Device security → Core isolation → Memory integrity
+
+    Restart your computer after disabling Memory integrity — this setting requires a reboot to take effect.
+  </Step>
+  <Step title="Configure Windows Defender">
+    Download Defender Control from [https://www.sordum.org/downloads/?st-defender-control](https://www.sordum.org/downloads/?st-defender-control). Extract the archive using WinRAR (archive password: `sordum`). Open **dControl.exe** and select **Disable Windows Defender**. The window turns red when Defender is fully off.
+  </Step>
+</Steps>
+
+## Step 3 — Set Up Discord Legacy Overlay
+
+<Info>
+  Wardogs External renders its cheat overlay through Discord's Legacy Overlay — not the standard Discord in-game overlay. You must enable Legacy Overlay specifically; the regular overlay will not work.
+</Info>
+
+<Steps>
+  <Step title="Install Discord and launch as administrator">
+    Download the Discord desktop app for Windows from [https://discord.com/download](https://discord.com/download) and install it. Right-click the Discord shortcut and select **Run as administrator** each time you launch it.
+  </Step>
+  <Step title="Enable Legacy Overlay and disable the regular overlay">
+    Inside Discord, open **User Settings** → **Game Overlay**. Toggle on **Enable Legacy Overlay**, then make sure the standard **Enable in-game overlay** toggle is turned **off**. Both settings must be correct — Legacy on, regular overlay off.
+  </Step>
+  <Step title="Confirm WARDOGS is listed under Registered Games">
+    Still in the **Game Overlay** settings, scroll down to **Registered Games** and verify that WARDOGS appears in the list. Leave Discord running in the background — do not close it before or during injection.
+  </Step>
+</Steps>
+
+<Warning>
+  If Legacy Overlay is missing from your Discord settings, contact support before proceeding. Do not attempt injection without it — the cheat overlay will not appear.
+</Warning>
+
+## Step 4 — Download the Loader
+
+Download the loader from [https://cheezit.life/](https://cheezit.life/) and run it as administrator.
+
+Find your license key in the order confirmation email sent at purchase, or log in to the EnmaCheats customer panel at [https://enmacheats.com/customer-panel/dashboard](https://enmacheats.com/customer-panel/dashboard). Sign in or create a loader account, then activate it using your license key.
+
+## Step 5 — Inject and Launch
+
+<Steps>
+  <Step title="Start injection with Discord already running">
+    Make sure Discord is open and running as administrator before you begin. Start injection in the loader and wait for it to complete fully before you open WARDOGS. Do not launch the game while injection is still in progress.
+  </Step>
+  <Step title="Run your spoofer (if applicable)">
+    If you are using an HWID spoofer alongside the cheat, run it now — after injection completes but before launching the game. The correct load order is: **cheat injection → spoofer → game**.
+  </Step>
+  <Step title="Launch WARDOGS and wait for the menu">
+    Launch WARDOGS and let it reach the main menu. Allow up to **three minutes** for the cheat menu to appear after the game loads — this is normal. Do not inject again during this wait period; a second injection attempt can cause the cheat to fail.
+  </Step>
+</Steps>
+
+<Note>
+  The default menu keybind is **Insert** / **INS**. Press it to open or close the cheat menu in-game.
+</Note>
+
+## Common Errors
+
+<Accordion title="Menu or ESP does not appear">
+  Wait the full three minutes after reaching the main menu before assuming something is wrong. Then verify all of the following:
+
+  - Discord is running as administrator
+  - Legacy Overlay is enabled in Discord settings
+  - The regular Discord overlay is disabled
+  - WARDOGS appears under Registered Games
+
+  Restart your PC and retry once from the injection step. If the menu still does not appear, open a support ticket.
+</Accordion>
+
+<Accordion title="Legacy Overlay not available in Discord settings">
+  Legacy Overlay is only available in the Discord Windows desktop app — it does not appear in the web version or on mobile. Confirm you are using the desktop app. If the option still does not appear, send support a screenshot of your Game Overlay settings page along with your Discord version number (found under User Settings → About).
+</Accordion>
+
+<Accordion title="Loader won't open or is blocked by Windows">
+  Check that both required runtime files (Visual C++ and DirectX) are installed. Make sure you are running the loader as administrator. Confirm all Windows preparation steps in Step 2 are complete, including the reboot after disabling Memory integrity. Restart your computer after making any changes, then try again.
+</Accordion>
+
+<Accordion title="Injection fails or shows a 0x error code">
+  Save the full error message and note which stage it failed at — Staging, Bypass Failure, Injection Failure, or Validation. Then:
+
+  - Confirm both runtime files are installed
+  - Confirm the loader is running as administrator
+  - Restart your PC if you recently changed any Windows settings
+
+  Send the complete error message and stage name to support so they can assist you quickly.
+</Accordion>
+
+<Accordion title="Changed a Windows setting but still getting the same error">
+  Many Windows security settings — including Memory integrity — only take effect after a full restart. If you changed a setting and the error persists, restart Windows completely and try again before concluding the change had no effect.
+</Accordion>
+
+## Need Help?
+
+Open a support ticket in the EnmaCheats Discord: [https://discord.gg/enmacheats](https://discord.gg/enmacheats)
+
+To get help as quickly as possible, include all of the following in your ticket:
+
+1. **Product name** — "Disconnect Wardogs External"
+2. **Windows version** — e.g. Windows 11 23H2
+3. **Step where it failed** — which step in this guide the error occurred on
+4. **Full error message or screenshot** — hide your license key in any screenshots before sending
+5. **Whether Legacy Overlay is available** — yes/no, and your Discord version if no
+6. **Whether you waited three minutes** — after launching WARDOGS before the menu appeared

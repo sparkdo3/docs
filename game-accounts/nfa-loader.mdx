@@ -1,0 +1,71 @@
+---
+title: "Set Up the NFA Account Loader — Full Activation Guide"
+sidebarTitle: "NFA Loader"
+description: "Set up the NFA account loader: install required files, download the loader, activate your key, and troubleshoot common connection and activation errors."
+---
+
+The NFA account loader is the tool you use to access game accounts purchased through EnmaCheats. It authenticates your key, connects to the account delivery system, and hands off the account credentials so you can log in and play. This guide covers installing the required dependencies, downloading and running the loader, activating your key, and fixing the errors most customers run into.
+
+## Step 1 — Install Required Files
+
+Install both files below before running the loader. These runtime libraries are required — the loader will fail to start without them.
+
+- **Visual C++ Redistributable (x64):** [https://aka.ms/vs/17/release/vc_redist.x64.exe](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+- **DirectX End-User Runtime:** [https://www.microsoft.com/en-us/download/details.aspx?id=35](https://www.microsoft.com/en-us/download/details.aspx?id=35)
+
+<Note>
+  Restart your computer after installing if Windows asks you to. Skipping the reboot can prevent the runtimes from being recognised by the loader.
+</Note>
+
+## Step 2 — Download the Loader
+
+Download the NFA loader directly from the link below:
+
+[https://loader.monster/nfa/nfa-loader-latest.exe?v=1.0.3](https://loader.monster/nfa/nfa-loader-latest.exe?v=1.0.3)
+
+Save the `.exe` file somewhere easy to find, such as your Desktop. Run the downloaded file and click through any Windows permission prompt that appears — this is normal and required for the loader to function.
+
+## Step 3 — Activate Your Account Key
+
+Once the loader is open, enter your NFA key to activate your account access. You can find your key in the order confirmation email sent at checkout, or by logging in to the EnmaCheats customer panel at [https://enmacheats.com/customer-panel/dashboard](https://enmacheats.com/customer-panel/dashboard) and viewing your order.
+
+<Tip>
+  Copy the complete key directly from your email or the customer panel and paste it into the loader. Even a single extra space at the beginning or end of the key will cause activation to fail.
+</Tip>
+
+## Common Errors
+
+<Accordion title="Key says expired or invalid">
+  Fully close the loader — make sure it is not still running in the system tray — then reopen it and try your key again. If the same message appears, open Command Prompt as administrator and run the following command to flush your DNS cache:
+
+  ```powershell
+  ipconfig /flushdns
+  ```
+
+  After the command completes, restart your computer and try activating again.
+</Accordion>
+
+<Accordion title="Loader cannot connect">
+  A network-level block is preventing the loader from reaching the activation server. Download and connect to **Cloudflare WARP** from [https://one.one.one.one/](https://one.one.one.one/), then reopen the loader with WARP active.
+
+  Also check that none of the following are blocking the loader's connection:
+  - VPN or proxy software (other than WARP)
+  - Firewall rules blocking outbound connections
+  - Antivirus software intercepting network traffic
+</Accordion>
+
+<Accordion title="Loader does not open">
+  Confirm that both required runtime files — Visual C++ and DirectX — are installed correctly. Restart Windows, then try running the loader again. If the loader still does not open, re-download it using the link in Step 2 in case the original file was corrupted or interrupted during download.
+</Accordion>
+
+<Accordion title="Cannot find my NFA key">
+  Check the inbox and spam folder of the email address you used at checkout. If you cannot find the order confirmation email, log in to the EnmaCheats customer panel at [https://enmacheats.com/customer-panel/dashboard](https://enmacheats.com/customer-panel/dashboard) and check your order history.
+
+  If your order is marked as delivered but no key is visible in the panel, open a support ticket and include your order ID — do not open multiple tickets for the same issue.
+</Accordion>
+
+## Need Help?
+
+Open a support ticket in the EnmaCheats Discord: [https://discord.gg/enmacheats](https://discord.gg/enmacheats)
+
+Include your **exact error message** and your **order ID** in the ticket so support can locate your purchase and resolve the issue quickly.
