@@ -3,8 +3,8 @@
   "name": "EnmaCheats",
   "theme": "aspen",
   "logo": {
-    "light": "https://media.brand.dev/c5dc7d98-59f2-40f6-ab9c-3c6efd100dc2.png",
-    "dark": "https://media.brand.dev/c5dc7d98-59f2-40f6-ab9c-3c6efd100dc2.png"
+    "light": "/logo/logo.png",
+    "dark": "/logo/logo.png"
   },
   "favicon": "/images/logo.png",
   "colors": {
