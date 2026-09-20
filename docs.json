@@ -57,7 +57,8 @@
             "group": "HWID Spoofers",
             "pages": [
               "spoofers/arkan-hwid-spoofer"
-            ]
+            ],
+            "hidden": true
           }
         ]
       },
