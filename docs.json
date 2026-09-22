@@ -51,7 +51,8 @@
             "group": "Game Accounts",
             "pages": [
               "game-accounts/nfa-loader"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "HWID Spoofers",
