@@ -52,7 +52,7 @@
             "pages": [
               "game-accounts/nfa-loader"
             ],
-            "hidden": true
+            "hidden": false
           },
           {
             "group": "HWID Spoofers",
